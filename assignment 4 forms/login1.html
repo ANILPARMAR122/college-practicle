@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Assignment Submission</title>
+</head>
+<body bgcolor="#fafafa">
+  <center><h1>Web Design Lab Forms</h1></center>
+  <hr width="80%">
+  <br>
+
+  <!-- 1. Alternative Login Form -->
+  <center>
+  <table width="400" border="0"><tr><td>
+    <fieldset>
+      <legend><h3>User Login</h3></legend>
+      <form action="#">
+        <p><b>Username:</b><br>
+        <input type="text" required minlength="4" size="40"></p>
+        
+        <p><b>Password:</b><br>
+        <input type="password" required size="40"></p>
+        
+        <p><b>Account Type:</b><br>
+        <select required>
+          <option value="">Choose role...</option>
+          <option value="student">Student</option>
+          <option value="admin">Admin</option>
+        </select></p>
+        
+        <p><input type="submit" value="Authenticate"></p>
+      </form>
+    </fieldset>
+  </td></tr></table>
+  </center>
+  <br><br>
+
+  <!-- 2. Alternative Registration Form -->
+  <center>
+  <table width="400" border="0"><tr><td>
+    <fieldset>
+      <legend><h3>Account Registration</h3></legend>
+      <form action="#">
+        <p><b>First Name:</b><br>
+        <input type="text" required size="40"></p>
+        
+        <p><b>Phone Number:</b><br>
+        <input type="tel" required pattern="[0-9]{10}" size="40"></p>
+        
+        <p><b>Portfolio Link:</b><br>
+        <input type="url" size="40"></p>
+        
+        <p><input type="submit" value="Create Account"></p>
+      </form>
+    </fieldset>
+  </td></tr></table>
+  </center>
+  <br><br>
+
+  <!-- 3. Alternative Product Details Form -->
+  <center>
+  <table width="400" border="0"><tr><td>
+    <fieldset>
+      <legend><h3>Inventory Entry</h3></legend>
+      <form action="#">
+        <p><b>Item Code:</b><br>
+        <input type="text" required size="40"></p>
+        
+        <p><b>Product Color:</b><br>
+        <input type="color"></p>
+        
+        <p><b>Upload Image:</b><br>
+        <input type="file" accept="image/*" required></p>
+        
+        <p><input type="submit" value="Upload Item"></p>
+      </form>
+    </fieldset>
+  </td></tr></table>
+  </center>
+  <br><br>
+
+  <!-- 4. Alternative Admission Form -->
+  <center>
+  <table width="400" border="0"><tr><td>
+    <fieldset>
+      <legend><h3>College Application</h3></legend>
+      <form action="#">
+        <p><b>Enrollment Month:</b><br>
+        <input type="month" required size="40"></p>
+        
+        <p><b>12th Grade %:</b><br>
+        <input type="number" required min="35" max="100" step="0.01" size="40"></p>
+        
+        <p><input type="checkbox" required id="terms">
+        <label for="terms">I agree to the terms</label></p>
+        
+        <p><input type="submit" value="Submit Application"></p>
+      </form>
+    </fieldset>
+  </td></tr></table>
+  </center>
+
+</body>
+</html>
